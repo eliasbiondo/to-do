@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <div className="p-36 h-[100vh]">{children}</div>
+        <div className="p-12 h-[100vh] sm:p-36">{children}</div>
       </body>
     </html>
   )
