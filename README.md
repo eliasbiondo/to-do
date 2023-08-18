@@ -6,7 +6,7 @@ Este projeto é um aplicativo Todo, construído com uma arquitetura de backend e
 
 src<br>
 │<br>
-├── backend<br>
+└── backend<br>
 │ └── ... (códigos e arquivos relacionados ao backend)<br>
 │<br>
 └── frontend<br>
