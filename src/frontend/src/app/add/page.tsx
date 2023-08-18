@@ -18,8 +18,26 @@ export default function AddNewTask() {
         setTaskDate(value);
     }
 
-    const handleAddTask = () => {
-        // TO-DO: add task to db
+    const handleAddTask = async () => {
+
+        try {
+            await fetch("http://ec2-34-207-239-60.compute-1.amazonaws.com:3000/task", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    title: taskName,
+                    date: taskDate,
+                    isDone: false
+                }) 
+            });
+
+            window.location.href = "/";
+        } catch (error) {
+            console.error(error);
+        }
+        
     }
 
     return (

@@ -1,13 +1,15 @@
 import Status from "./components/Status";
 import Tasks from "./components/Tasks";
 import Title from "./components/Title";
-import { mockedTasks } from "../../mockedTasks"
 import AddTask from "./components/Add";
 
-export default function Home() {
+export default async function Home() {
 
-  // TO-DO: fetch tasks from db
-  const tasks = mockedTasks;
+  const data = await fetch("http://ec2-34-207-239-60.compute-1.amazonaws.com:3000" + "/task", 
+    {
+      cache: "no-store"
+    });
+  const tasks = await data.json();
 
   return (
     <div className="flex flex-col">
