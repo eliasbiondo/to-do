@@ -31,7 +31,6 @@ export class TaskService {
   }
 
   async update(id: string, taskToUpdate: TaskToUpdate): Promise<Task> {
-    taskToUpdate.date = new Date(taskToUpdate.date).toISOString();
     return await this.prisma.task.update({
       where: {
         id: id,

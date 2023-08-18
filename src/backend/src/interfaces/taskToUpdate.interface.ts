@@ -1,5 +1,5 @@
 export interface TaskToUpdate {
   title?: string;
-  date?: string;
+  date?: Date;
   isDone?: boolean;
 }
