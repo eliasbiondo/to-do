@@ -11,7 +11,7 @@ export default function Task({ children: task }: { children: ITask }) {
         setChecked(newChecked);
 
         try {
-            const response = await fetch("http://ec2-34-207-239-60.compute-1.amazonaws.com:3000/task/" + task.id, {
+            const response = await fetch("http://ec2-54-173-93-49.compute-1.amazonaws.com:3000/task/" + task.id, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"

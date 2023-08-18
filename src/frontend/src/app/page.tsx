@@ -5,7 +5,7 @@ import AddTask from "./components/Add";
 
 export default async function Home() {
 
-  const data = await fetch("http://ec2-34-207-239-60.compute-1.amazonaws.com:3000" + "/task", 
+  const data = await fetch("http://ec2-54-173-93-49.compute-1.amazonaws.com:3000" + "/task", 
     {
       cache: "no-store"
     });
