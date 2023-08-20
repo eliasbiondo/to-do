@@ -21,7 +21,7 @@ export default function AddNewTask() {
     const handleAddTask = async () => {
 
         try {
-            await fetch("http://ec2-54-173-93-49.compute-1.amazonaws.com:3000/task", {
+            await fetch("http://ec2-54-90-12-77.compute-1.amazonaws.com:3000/task", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
