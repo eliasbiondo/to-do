@@ -23,6 +23,12 @@ O backend é construído usando o [Nest](https://nestjs.com/), um framework para
 
 O frontend é construído usando o [Next.js](https://nextjs.org/), um framework popular para renderização do lado do servidor com React.
 
+## Vídeo Demonstrativo
+
+Aqui está um vídeo demonstrativo do sistema em funcionamento:
+
+https://drive.google.com/file/d/1seMCVss87ecqOah723_cUwfPU2QCljLe/view?usp=sharing
+
 ## Configuração
 
 ### Backend
